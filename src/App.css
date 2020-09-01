@@ -45,7 +45,7 @@ height: 790px;}
 .gameContainer{
   display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:80%;
     height: 92%;
     
@@ -141,7 +141,7 @@ height: 790px;}
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-top:4%;
+  margin-top:2%;
 }
 .listBirds{
  
@@ -312,7 +312,21 @@ font-family:'Pattaya';}
 
 #root > div > div.gameContainer > div.gameSection > div.listBirds > div:nth-child(6) > div{ border-radius: 0 0 18px 18px;}
 #root > div > div.gameContainer > div.gameSection > div.listBirds > div:nth-child(1) > div{ border-radius:18px 18px 0 0 ;}
-
+@media (max-width: 1200px) {
+  .logo{margin-top:200px;}
+  span{font-size: 20px;}
+  .upperInfo{flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+  .questionText {font-size: 20px;}
+  .infoContainer{height: 300px;}
+  .questionIMG{height: 100px;
+    width: 150px}
+  .latinText{
+    height:40px;
+    font-size: 15px;}
+    .description{ height: 100px;}
+}
 @media (max-width: 950px) {
   span{font-size: 20px;}
   .upperInfo{flex-direction: column;
